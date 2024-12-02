@@ -1,0 +1,42 @@
+.form-container{
+    margin: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vw;
+    width: 100%;
+    padding: 2.5vw;
+    border-image: linear-gradient(to right, orangered 0%, purple 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+.form-container form input, textarea{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+#submit-btn{
+    background: linear-gradient(to right, orangered, purple);
+    border: none;
+    border-radius: 4px;
+}
+
+#submit-btn:hover{
+    background: linear-gradient(to right, purple, orangered);
+    cursor: pointer;
+}
+
+@media (max-width: 412px){
+    .form-container{
+        margin: 8vw 5vw;
+    }
+}

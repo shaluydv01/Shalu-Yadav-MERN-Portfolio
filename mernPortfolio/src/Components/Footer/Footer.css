@@ -1,0 +1,8 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background: linear-gradient(to right, orangered, purple);
+    width: 100%;
+}

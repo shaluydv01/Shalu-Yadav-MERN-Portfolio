@@ -1,0 +1,21 @@
+.typing_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 5vw;
+}
+
+.typing_container h1{
+    font-size: 4vw;
+}
+
+#words{
+    color: orangered;
+}
+
+@media (max-width: 412px){
+    .typing_container h1{
+        font-size: 1rem;
+    }
+}
+

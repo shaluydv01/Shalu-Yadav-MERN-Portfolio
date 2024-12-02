@@ -1,0 +1,89 @@
+.projects-container{
+    margin: 7vw 5vw;
+    position: relative;
+}
+
+.projects-container #para-top{
+    text-align: center;
+    font-size: 4.2vw;
+    font-weight: 600;
+    margin-bottom: 8vw;
+}
+
+.projects-container .projects-card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+
+.projects-card-container .project-card{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.projects-card-container .project-card .card1-content{
+    padding: 1vw;
+    width: 100%;
+}
+
+.project-card .card1-content h3{
+    font-size: 2vw;
+}
+
+.project-card .card1-content p{
+    font-size: 2vw;
+}
+
+.card1-content .card1-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.card1-content .card1-btn a{
+    display: flex;
+    background: linear-gradient(to right, orangered, purple);
+    padding: 0.5vw 3vw;
+    border-radius: 4px;
+    margin-top: 2vw;
+}
+
+.card1-content .card1-btn a:hover{
+    transform: scale(1.1);
+}
+
+.card1-content .card1-btn a img{
+    width: 2vw;
+}
+
+@media (max-width: 412px){
+    .projects-container{
+        margin: 10vw 5vw;
+    }
+
+    .projects-container .projects-card-container{
+       flex-direction: column;
+        gap: 8vw;
+    }
+
+    .project-card .card1-content h3{
+        font-size: 5vw;
+    }
+    
+    .project-card .card1-content p{
+        font-size: 4vw;
+    }
+
+    .projects-card-container .project-card .card1-content{
+        padding: 3vw;
+    }
+
+    .card1-content .card1-btn a{
+        padding: 1.5vw 5vw;
+    }
+
+    .card1-content .card1-btn a img{
+        width: 3.5vw;
+    }    
+}

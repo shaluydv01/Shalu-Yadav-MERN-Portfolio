@@ -1,0 +1,50 @@
+.socialMedia-container{
+    margin: 3vw 5vw;
+}
+
+.socialMedia-container p{
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 6vw;
+    position: relative;
+}
+
+.social-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.social-image a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 10vw;
+    background: linear-gradient(to right, purple, orangered);
+    border-radius: 50%;
+}
+
+.social-image a:hover{
+    transform: scale(1.1);
+    background: orangered;
+}
+
+.social-image a img{
+    width: 3vw;
+    height: 3vw;
+}
+
+@media (max-width: 412px) {
+    .socialMedia-container p{
+        font-size: 6vw;
+        margin-bottom: 8vw;
+        position: relative;
+    }
+    
+    .social-image a{
+        width: 14vw;
+        height: 14vw;
+    }
+}

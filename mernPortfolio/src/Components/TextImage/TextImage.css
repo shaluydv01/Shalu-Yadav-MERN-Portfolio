@@ -1,0 +1,77 @@
+.textImage-container{
+    margin: 2vw 5vw;
+    padding: 1vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+}
+
+.textImage-text p{
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+
+#explore-para{
+    margin-top: 2vw;
+}
+
+.textImage-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    margin-top: 4vw;
+}
+
+.textImage-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vw;
+    width: 8vw;
+    background: linear-gradient(to right, orangered, purple);
+    padding: 0.5vw 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.textImage-button a:hover{
+    transform: scale(1.1);
+}
+
+.textImage-button a img{
+    width: 2.2vw;
+}
+
+#profile-image{
+    width: 25vw;
+}
+
+@media (max-width: 412px) {
+    .textImage-container{
+        flex-direction: column-reverse;
+    }
+
+    .textImage-text p{
+        font-size: 3vw;
+        line-height: 4vw;
+        text-align: justify;
+    }
+
+    .textImage-button a{
+        width: 12vw;
+        padding: 2vw 8vw;
+        font-size: 3.5vw;
+    }
+
+    .textImage-button a img{
+        width: 4vw;
+    }
+
+    #profile-image{
+        width: 35vw;
+    }
+}
