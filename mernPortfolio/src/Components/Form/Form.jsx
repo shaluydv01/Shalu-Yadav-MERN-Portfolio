@@ -12,7 +12,10 @@ const Form = () => {
 
   const loginHandler = async (e) => {
     e.preventDefault();
-    const result = await contact(fullname, email, message);
+    
+    
+    try{
+      // const result = await contact(fullname, email, message);
 
     // console.log(result);
 
@@ -31,7 +34,21 @@ const Form = () => {
     setEmail("");
     setFullname("");
     setMessage("");
-  };
+  }catch(error) {
+    toast.error("Failed to send message", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+  }
+};
+
 
   return (
     <>
