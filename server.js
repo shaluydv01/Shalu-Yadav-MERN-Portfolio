@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import userRouter from '/routes/user.js';
+import userRouter from './routes/user.js';
 import cors from 'cors'; // Import cors
 import path from 'path';
 import { fileURLToPath } from 'url';
