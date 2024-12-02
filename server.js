@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import userRouter from "./routes/user.js";
-import bodyParser from "express";
+// import bodyParser from "express";
 import cors from "cors";  // Import cors
 import path from "path";
 import { fileURLToPath } from 'url';
@@ -24,7 +24,7 @@ app.use(cors({
   credentials: true
 }))
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 //userRouter
 app.use('/api', userRouter);
