@@ -37,7 +37,7 @@
 
 import React from "react";
 import axios from "axios";
-import { AppContext } from "./App_context";  // Corrected import path
+import { AppContext } from "/App_Context";  // Corrected import path
 
 const App_State = (props) => {
   const url = `${window.location.origin}/api`;
