@@ -1,6 +1,7 @@
-// App_Context.jsx
-import React from "react";
+import React, { createContext } from "react";
 
-const AppContext = React.createContext();
+// Create the context
+const AppContext = createContext();
 
+// You can add any default values to the context
 export default AppContext;
