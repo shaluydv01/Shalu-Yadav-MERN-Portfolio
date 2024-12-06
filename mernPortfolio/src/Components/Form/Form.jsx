@@ -92,7 +92,7 @@
 
 import "./Form.css";
 import React, { useContext, useState } from "react";
-import { AppContext } from "../../Pages/context/App_context";
+import AppContext  from "../../Pages/context/App_Context";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
